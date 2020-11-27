@@ -27,7 +27,7 @@ The CSVs were inspected, and an ERD (Entity Relationship Diagram) of the tables 
 
 
 ## <a name="data-engineering"></a> Data Engineering
-* Create a table schema for each of the six CSV files using the information. I specified data types, primary keys, foreign keys, and other constraints.
+* Created a table schema for each of the six CSV files using the information and specified data types, primary keys, foreign keys, and other constraints.
 * Tables are to be created in the correct order to handle foreign keys.
 * Imported each CSV file into the corresponding SQL table. Note be sure to import the data in the same order that the tables were created and account for the headers when importing to avoid errors.
 * You can find the table schema sql file is here:
