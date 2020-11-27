@@ -1,0 +1,42 @@
+departments
+-
+dept_no VARCHAR PK
+dept_name VARCHAR
+
+employees
+-
+emp_no INT PK
+emp_title VARCHAR FK >- titles.title_id
+birth_date DATE
+first_name VARCHAR
+last_name VARCHAR
+sex VARCHAR
+hire_date DATE
+
+titles
+-
+title_id VARCHAR PK
+title VARCHAR
+
+dept_emp
+-
+# Each department may have different employees
+# Employees belong to one unique department
+emp_no INT FK >- employees.emp_no
+dept_no VARCHAR FK - departments.dept_no
+
+dept_manager
+-
+dept_no VARCHAR FK >-< departments.dept_no
+# employee can be manager of zero, one, or many departments
+# or be manager of different departments over time.
+# So, this is a zero or many (dept_manager) to one (employees)
+# relationship.
+emp_no INT FK >0- employees.emp_no
+
+salaries
+-
+# One employee can have different salaries over time.
+# one-to-many
+emp_no INT FK >- employees.emp_no
+salary INT
