@@ -49,7 +49,17 @@ The queries will perform the following:
 
 ## <a name="salary-analysis"></a> Salary Analysis and Visulization
 To further analyze employees' salary data and visualize the data, Jupyter Notebook and Python were used.
+
 The notebook was created to import the SQL database into Pandas, join the tables needed for the analysis, create a histogram to visualize the most common salary ranges for employees, and finally create a bar chart of average salary by title. Lastly, there is a bonus part to search for employee information whose ID number is 499942.
+
+* **NOTE** 
+  * To run this notebook, **psycopg2** has to be installed.
+  * You will also need to create a 'config.py' file which contains your postgresql username and password as shown below: 
+  ```
+  username = "<your postgres username here>"
+  password = "<your postgres password here>"
+  ```
+
 
 * The created plots are the following:
 
