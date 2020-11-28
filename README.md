@@ -25,7 +25,7 @@ This project is a research project on employees of the corporation from the 1980
   * "Images" folder that contains the plots created.
   
 ## <a name="data-modeling"></a> Data Modeling
-The CSVs were inspected, and an ERD (Entity Relationship Diagram) of the tables was sketched out using a tool called 'Quick DBD.'
+The CSVs were inspected, and an ERD (Entity Relationship Diagram) of the tables was sketched out using a tool called 'Quick DBD.'</br></br>
 ![erd](./EmployeeSQL/ERD/erd.png) </br>
 
 
@@ -54,7 +54,7 @@ The notebook was created to import the SQL database into Pandas, join the tables
 
 * **NOTE** 
   * To run this notebook, **psycopg2** has to be installed.
-  * You will also need to create a 'config.py' file which contains your postgresql username and password as shown below: 
+  * You will also need to create a 'config.py' file which contains your postgresql username and password as shown below: </br></br>
   ```
   username = "<your postgres username here>"
   password = "<your postgres password here>"
@@ -64,7 +64,7 @@ The notebook was created to import the SQL database into Pandas, join the tables
 * The created plots are the following:
 
 ![histogram](./EmployeeSQL/Images/histogram_of_salary_ranges_for_employees_distribution.png) </br>
-
+</br>
 ![bar](./EmployeeSQL/Images/average_salary_by_title.png) </br>
 
 
