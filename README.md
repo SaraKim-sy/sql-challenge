@@ -17,9 +17,12 @@ This project is a research project on employees of the corporation from the 1980
   * Data Analysis
 
 * Inside an EmployeeSQL folder, you will find the following:
-  * SQL script
+  * "ERD" folder that contains an entity relationship diagram png file and an erd schema text file. 
+  * "data" folder that contains six CSV files about employees information.
+  * [**table_schemata.sql**](./EmployeeSQL/table_schemata.sql) which is a SQL table schema for each CSV file. 
+  * [**query.sql**](./EmployeeSQL/query.sql) to analyze the database and answer the data questions.
   * A jupyter notebook file called [**employee_salary_analysis.ipynb**](./EmployeeSQL/TEST/employee_salary_analysis.ipynb), which is the script to run for the salary analysis and visualization.
-  * An "Images" folder that contains the plots created.
+  * "Images" folder that contains the plots created.
   
 ## <a name="data-modeling"></a> Data Modeling
 The CSVs were inspected, and an ERD (Entity Relationship Diagram) of the tables was sketched out using a tool called 'Quick DBD.'
